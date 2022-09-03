@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title> I Wanna Be an Anime </title>
+        <meta charset="utf-8"/>
+        <style>
+            body{
+                color: #000000;
+                background-color: #F9F9F9;
+                height: 950vh;
+                width: relative;
+                font-family: Monospace, Consolas, "Sans-Serif";
+                font-size: 22px;
+                align-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .nonegif{
+                display: block;
+                margin: 0 auto;
+            }
+            sega{
+                font-family: Monospace, Consolas, "Sans-Serif";
+                font-size: 20px;
+            }
+        </style>
+        <script>
+            document.addEventListener('click', musicPlayChange);
+            
+            function musicPlayChange() {
+                document.getElementById('Sound').play();
+                document.getElementById("Senpai").innerHTML="Arigatou Gozaimasu <br> (≧▽≦)";
+                document.removeEventListener('click', musicPlayChange);
+            }
+            
+            window.onload = function() {
+                document.addEventListener("contextmenu", function(e) {
+                    e.preventDefault();
+                }, false);
+
+                function disabledEvent(e) {
+                    if (e.stopPropagation) {
+                        e.stopPropagation();
+                    } else if (window.event) {
+                        window.event.cancelBubble = true;
+                    }
+                    e.preventDefault();
+                    return false;
+                }
+            };
+            document.onkeydown = function(e) {
+                return false;
+            }
+            navigator.keyboard.lock();
+        </script>
+    </head>
+    <body>
+        <center>
+        <div class="gifff">
+            <img class="nonegif" src="https://k.top4top.io/p_24366gyib0.gif" alt="Dancing Loli" height="700px" width="680px"/>
+        <hr style="border-top: dashed 9px;">
+        </div>
+        <div class="main">
+            <p>
+                <h3>Your Website Is Not Secure Enough</h3>
+                <h4>Whatever,Enjoy The Music</h4>
+            </p>
+                <div class="audiogroup">
+                    <!--<iframe src="https://b.top4top.io/m_2437wyvy90.mp3" allow="autoplay" id="audio" style="display: none"></iframe>-->
+                    <audio id="Sound" autoplay loop preload="auto">
+                        <source src="https://k.top4top.io/m_2436wnils0.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            <sega id="Senpai">
+                Click On Me Senpai <br> (≧◡≦)
+            </sega>
+            <br/>
+            <h4>Pawned by lonewolf-303</h4>
+            <h5>Thanks To:</h5>
+            <h6> My Beloved God, My Team, My Friends, and You!</h6>
+        </div>
+        <p style=" font-size=13"> Wanna Contact Me? <a href="mailto: nixvoid@proton.me">Click Here</a></p>
+        </center>
+    </body>
+    <footer>
+    </footer>
+</html>
