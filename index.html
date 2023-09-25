@@ -1,62 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-
-    <!-- MY CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <title>CONTINUE | MRMemori</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="#">MRMemori</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Categories </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+<html>
+    <head>
+        <title> I Wanna Be an Anime </title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <style>
+            body{
+		padding: 0;
+		margin: 0 auto;
+                color: #000000;
+                background-color: #F9F9F9;
+                height: 80%;
+                width: auto;
+                font-family: Monospace, Consolas, "Sans-Serif";
+                font-size: 1.5vw;
+                align-content: center;
+                align-items: center;
+                text-align: center;
+            }
+	    sega{
+                font-family: Monospace, Consolas, "Sans-Serif";
+                font-size: 1.5vw;
+            }
+	    @media only screen (max-width : 1080px){
+	    body{
+		padding: 0;
+		margin: 0 auto;
+                color: #000000;
+                background-color: #F9F9F9;
+                height: 80%;
+                width: auto;
+                font-family: Monospace, Consolas, "Sans-Serif";
+                font-size: 2.5vw;
+                align-content: center;
+                align-items: center;
+                text-align: center;
+            }
+	    sega{
+                font-family: Monospace, Consolas, "Sans-Serif";
+                font-size: 2.5vw;
+            }
+	    }
+            .nonegif{
+                display: block;
+                margin: 0 auto;
+                
+            }
+        </style>
+        <script>
+            document.addEventListener('click', musicPlayChange);
+            
+            function musicPlayChange() {
+                document.getElementById('Sound').play();
+                document.getElementById("Senpai").innerHTML="Arigatou Gozaimasu !!!<br> (≧▽≦)";
+                document.removeEventListener('click', musicPlayChange);
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+        <div class="gifff">
+            <img class="nonegif" src="https://b.top4top.io/p_2624y4bbe1.gif" alt="Dancing Loli" height="40%" width="auto"/>
+        <hr style="border-top: dashed 6px; color: black">
         </div>
-      </div>
-    </nav>
-    <!-- Akhir Navbar -->
-
-    <!--  Jumbotron-->
-    <section class="jumbotron">
-      <h1 class="display-4">Hello!</h1>
-      <p class="lead">Selamat Datang di MRMemori.</p>
-      <hr class="my-4" />
-      <p>Disini kamu bisa mendownload game dan aplikasi.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </section>
-    <!-- Akhir Jumbotron -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+        <div class="main">
+            <p>
+                <h3>Your Website Is Not Secure Enough</h3>
+                <h4>Whatever,Enjoy The Music</h4>
+            </p>
+                <div class="audiogroup">
+                    <!--<iframe src="https://b.top4top.io/m_2437wyvy90.mp3" allow="autoplay" id="audio" style="display: none"></iframe>-->
+                    <audio id="Sound" autoplay loop preload="auto">
+                        <source src="https://e.top4top.io/m_2624m2ika1.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            <sega id="Senpai">
+                Click On Me Senpai <br> (≧◡≦)
+            </sega>
+            <br/>
+            <h4>Pawned by lonewolf-303</h4>
+            <h5>Thanks To:</h5>
+            <h6> My Beloved God, My Team, My Friends, and You!</h6>
+        </div>
+        <p style=" font-size=12"> Wanna Contact Me? <a href="mailto: nixvoid@proton.me">Click Here</a></p>
+        </center>
+    </body>
+    <footer>
+    </footer>
 </html>
